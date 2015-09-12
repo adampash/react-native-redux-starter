@@ -2,7 +2,7 @@ import React from 'react-native'
 import ExampleApp from './example'
 import { compose, createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux/native'
-import exampleApp from '../reducers/example'
+import appReducers from '../reducers/index'
 import thunk from 'redux-thunk'
 
 // // Enables your middleware:
@@ -18,7 +18,7 @@ let composers = [ applyMiddleware(thunk) ]
 
 const finalCreateStore = compose(...composers)(createStore)
 
-let store = finalCreateStore(exampleApp)
+let store = finalCreateStore(appReducers)
 // if (module.hot) {
 //   // Enable Webpack hot module replacement for reducers
 //   module.hot.accept('./reducers/example', () => {
