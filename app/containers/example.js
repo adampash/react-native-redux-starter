@@ -27,7 +27,7 @@ export default class ExampleApp extends React.Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native Starter!
+          React Native Starter is Hot!
         </Text>
         <Text style={styles.instructions}>
           To get started, edit index.ios.js

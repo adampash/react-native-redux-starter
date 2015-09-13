@@ -1,5 +1,5 @@
 import React from 'react-native'
-import App from './app/containers/app'
+import App from './containers/app'
 
 var {
   AppRegistry

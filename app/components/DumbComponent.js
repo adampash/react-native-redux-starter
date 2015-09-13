@@ -11,8 +11,8 @@ var {
 
 let styles = StyleSheet.create({
   dummy: {
-    fontSize: 40,
-    padding: 5,
+    fontSize: 25,
+    padding: 15,
     backgroundColor: '#F5FCFF',
   },
 })
@@ -30,7 +30,7 @@ export default class DumbComponent extends React.Component {
     return(
       <TouchableHighlight onPress={this.handlePress.bind(this)}>
         <Text style={styles.dummy}>
-          Hello world! {this.props.foo}
+          Hello there! {this.props.foo}
         </Text>
       </TouchableHighlight>
     )
