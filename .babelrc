@@ -24,5 +24,14 @@
     "react",
     "react.displayName"
   ],
-  "sourceMaps": false
+  "sourceMaps": false,
+  "stage": 0,
+  "plugins": ["react-transform"],
+  "extra": {
+    "react-transform": [{
+      "target": "react-transform-webpack-hmr",
+      "imports": ["react-native"],
+      "locals": ["module"]
+    }]
+  }
 }
